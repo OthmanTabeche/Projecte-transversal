@@ -1,4 +1,4 @@
 # Projecte-transversal
 Projecte transversal (LMSGI)
-Othman Tabeche DAW1b
+Othman Tabeche 
 Luis Tabilo DAW1b
