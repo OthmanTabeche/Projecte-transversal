@@ -27,6 +27,38 @@
         </ul>
      </nav>
      <h1 class="title">Formulario de ayuda</h1>
+     <form method="post" action='https://register-demo.freecodecamp.org'>
+        <fieldset>
+          <label for="first-name">Introduce tu nombre: <input id="first-name" name="first-name" type="text" required /></label>
+          <label for="last-name">Introduce tu apellido: <input id="last-name" name="last-name" type="text" required /></label>
+          <label for="email">Introduce tu email: <input id="email" name="email" type="email" required /></label>
+          <label for="new-password">Crea una contrasenya:<input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Tipo de cuenta (obligatorio)</legend>
+          <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal</label>
+          <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Empresa</label>
+        </fieldset>
+        <fieldset>
+          <label for="age">Introduce tu edad<input id="age" type="number" name="age" min="18" max="120" /></label>
+          <label for="referrer">Como nos conociste?
+            <select id="referrer" name="referrer">
+              <option value="">(selecciona una)</option>
+              <option value="1">Instagram</option>
+              <option value="2">YouTube</option>
+              <option value="3">X</option>
+              <option value="4">Altres</option>
+            </select>
+          </label>
+          <label for="bio">En que te podemos ayudar?
+            <textarea id="bio" name="bio" rows="3" cols="30"></textarea>
+          </label>
+        </fieldset>
+        <label for="terms-and-conditions">
+          <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> Acepto los <a href="https://fashion.jeanpaulgaultier.com/en-es/terms-and-conditions-of-sales">terminos i condiciones</a>
+        </label>
+        <input type="submit" value="Envia" />
+      </form>
      <footer>
         <p>&copy; <span id="year"></span>2024 Jean Paul Gaultier Perfumes. Todos los derechos reservados.</p>
      </footer>
