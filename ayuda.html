@@ -8,12 +8,9 @@
 </head>
 <body>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-    </style>
-    <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
     </style>
-     <nav>
+    <nav>
         <div class="logo">
             <a href="index.html" class="logo-color">JPG Perfumes</a>
         </div>
@@ -22,45 +19,49 @@
             <li><a href="tiendas.html">Tiendas</a></li>
             <li><a href="galeria.html">Galeria</a></li>
             <li><a href="historia.html">Historia</a></li>
-            <li><a href="sobreNosotros.html">Sobre nostros</a></li>
-           <li><a href="ayuda.html">Ayuda</a></li> 
+            <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
         </ul>
-     </nav>
-     <h1 class="title">Formulario de ayuda</h1>
-     <form method="post" action='https://register-demo.freecodecamp.org'>
+    </nav>
+    <h1 class="title">Formulario de ayuda</h1>
+    <form method="post" action="confirmacion.html">
         <fieldset>
-          <label for="first-name">Introduce tu nombre: <input id="first-name" name="first-name" type="text" required /></label>
-          <label for="last-name">Introduce tu apellido: <input id="last-name" name="last-name" type="text" required /></label>
-          <label for="email">Introduce tu email: <input id="email" name="email" type="email" required /></label>
-          <label for="new-password">Crea una contrasenya:<input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
-        </fieldset>
-        <fieldset>
-          <legend>Tipo de cuenta (obligatorio)</legend>
-          <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal</label>
-          <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Empresa</label>
-        </fieldset>
-        <fieldset>
-          <label for="age">Introduce tu edad<input id="age" type="number" name="age" min="18" max="120" /></label>
-          <label for="referrer">Como nos conociste?
-            <select id="referrer" name="referrer">
-              <option value="">(selecciona una)</option>
-              <option value="1">Instagram</option>
-              <option value="2">YouTube</option>
-              <option value="3">X</option>
-              <option value="4">Altres</option>
+          <label for="nombre">Nombre: <input id="nombre" name="nombre" type="text" required /></label>
+          <label for="correo">Correo electrónico: <input id="correo" name="correo" type="email" required /></label>
+          <label for="edad">Edad: <input id="edad" name="edad" type="number" min="18" max="120" required /></label>
+          <label for="tema">Tema de consulta:
+            <select id="tema" name="tema" required>
+              <option value="">(Selecciona una opción)</option>
+              <option value="perfumes">Perfumes</option>
+              <option value="ropa">Envio</option> 
+              <option value="otros">Otros</option>
             </select>
           </label>
-          <label for="bio">En que te podemos ayudar?
-            <textarea id="bio" name="bio" rows="3" cols="30"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Preferencias de contacto (obligatorio)</legend>
+          <label for="email-contacto"><input id="email-contacto" type="radio" name="contacto" value="email" class="inline" checked /> Email</label>
+          <label for="telefono-contacto"><input id="telefono-contacto" type="radio" name="contacto" value="telefono" class="inline" /> Teléfono</label>
+          <label for="whatsapp-contacto"><input id="whatsapp-contacto" type="radio" name="contacto" value="whatsapp" class="inline" /> WhatsApp</label>
+        </fieldset>
+        <fieldset>
+          <legend>Opciones adicionales (elige al menos una)</legend>
+          <label for="promociones"><input id="promociones" type="checkbox" name="extras" value="promociones" class="inline" checked /> Promociones</label>
+          <label for="novedades"><input id="novedades" type="checkbox" name="extras" value="novedades" class="inline" /> Novedades</label>
+          <label for="eventos"><input id="eventos" type="checkbox" name="extras" value="eventos" class="inline" /> Eventos</label>
+        </fieldset>
+        <fieldset>
+          <label for="mensaje">Escribe tu consulta aquí:
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
           </label>
         </fieldset>
-        <label for="terms-and-conditions">
-          <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> Acepto los <a href="https://fashion.jeanpaulgaultier.com/en-es/terms-and-conditions-of-sales">terminos i condiciones</a>
+        <label for="condiciones">
+          <input class="inline" id="condiciones" type="checkbox" required /> Acepto los <a href="https://fashion.jeanpaulgaultier.com/en-es/terms-and-conditions-of-sales">términos y condiciones</a>
         </label>
-        <input type="submit" value="Envia" />
-      </form>
-     <footer>
-        <p>&copy; <span id="year"></span>2024 Jean Paul Gaultier Perfumes. Todos los derechos reservados.</p>
-     </footer>
+        <input type="submit" value="Enviar" />
+    </form>
+    <footer>
+        <p>&copy; <span id="year"></span> 2024 Jean Paul Gaultier Perfumes. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

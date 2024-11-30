@@ -114,13 +114,13 @@ footer {
     object-fit: cover;
 }
 
-main {
+article {
     display: block;
     margin: 0 auto;
     width: 75%;
 }
 
-main img {
+article img {
     width: 100%;    
     margin: 0;
     display: block;
@@ -206,18 +206,58 @@ input[type="submit"] {
     border-radius: 7px;
 }
 
-article {
+.contanier-tendencias {
+    display: flex;
+    aspect-ratio: 1;
+    gap: 70px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.contanier-tendencias img {
+    max-width: 100%;
+    height: auto;  
+    width: 400px;   
+    border-radius: 7px;
+}
+
+main {
     display: flex;
     gap: 70px;
     margin: 0 auto;
     width: 90%;
 }
 
-article img {
+main img {
     width: 100%;    
     margin: 0;
     display: block;
     margin: 0 auto;
     display: inline-flex;
     border-radius: 7px;
+}
+
+.sobre-nosotros {
+    display: block;
+    text-align: center;
+    font-family: Montserrat;
+    text-decoration: underline;
+}
+
+.sobre-nosotros img {
+    width: 400px;
+}
+
+table, th, tr, td {
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+table {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+td {
+    padding: 1em;
 }
