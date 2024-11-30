@@ -64,7 +64,7 @@ h1{
     max-width: 100%;
     height: auto;  
     width: 400px;   
-    border-radius: 7px;
+    border-radius: 9px;
 
 }
 
@@ -126,7 +126,7 @@ article img {
     display: block;
     margin: 0 auto;
     display: inline-flex;
-    border-radius: 7px;
+    border-radius: 9px;
 }
 
 form {
@@ -203,22 +203,20 @@ input[type="submit"] {
     max-width: 100%;
     height: auto;  
     width: 400px;   
-    border-radius: 7px;
+    border-radius: 9px;
 }
 
 .contanier-tendencias {
     display: flex;
-    aspect-ratio: 1;
     gap: 70px;
     margin: 0 auto;
     width: 90%;
 }
 
 .contanier-tendencias img {
-    max-width: 100%;
     height: auto;  
-    width: 400px;   
-    border-radius: 7px;
+    width: 400px;
+    border-radius: 9px;
 }
 
 main {
@@ -234,7 +232,7 @@ main img {
     display: block;
     margin: 0 auto;
     display: inline-flex;
-    border-radius: 7px;
+    border-radius: 9px;
 }
 
 .sobre-nosotros {
