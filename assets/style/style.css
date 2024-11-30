@@ -129,6 +129,10 @@ article img {
     border-radius: 9px;
 }
 
+article p {
+    font-family: "Playfair Display";
+}
+
 form {
     width: 60vw;
     max-width: 500px;
@@ -208,9 +212,9 @@ input[type="submit"] {
 
 .contanier-tendencias {
     display: flex;
-    gap: 70px;
-    margin: 0 auto;
-    width: 90%;
+    justify-content: space-between;
+    margin-left: 36px;
+    margin-right: 36px;
 }
 
 .contanier-tendencias img {
